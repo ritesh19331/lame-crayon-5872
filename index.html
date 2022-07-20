@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div id="home-button">
+            <a href="index.js">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="" >
+                <span>Sanitized & safe</span>
+            </a>
+        </div>
+
+        <div class="navbar-button">
+            <a class="navbar-button-hover"><span>Mahindra</span> Subscription</a>
+            <a class="navbar-button-hover"><span>Hyundai</span> Subscription</a>
+            <a>FAQs</a>
+            <a>Login or Signup</a>
+        </div>
+    </div> 
+
+
+<!-- //below navbar input box and image -->
+    <div class="below-navbar">
+        <form>
+            <div id="form-heading">
+                <div>
+                    <h1>Rentals</h1>
+                    <p>For hours and days</p>
+                </div>
+
+                <div>
+                    <h1>Subscriptions</h1>
+                    <p>For months & years</p>
+                </div>
+            </div>
+            <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="">
+            <p>Self drive car rentals in India</p>
+
+            <select name="" id="select-city" >
+                <option value="">Select City</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <div id="date">
+                <input type="datetime-local" name="" id="start-date">
+                <span >Start time</span>
+                <input type="datetime-local" name="" id="end-date">
+                <span >End time</span>
+            </div>
+            <p id="renting-time"></p>
+            <input type="submit" id="Search-location" value="Search">
+        </form>
+        <div id="below-navbar-image">
+            <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp" alt="">
+        </div> 
+    </div>
+
+    <div class="body-content">
+        <h1>Featured</h1>
+       <div id="crauser-button">
+        <button id="left-btn"><</button>
+        <button id="right-btn">></button>
+       </div>
+        <div id="featured">
+            <img src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png" alt="" id="image1">
+            <img src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png" alt="" id="image2">
+            <img src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png" alt="" id="image3">
+        </div>
+
+        <h1>Sanitized and Safe Cars</h1>
+       <div id="crauser-button-sanitized-safe-cars">
+        <button id="left-btn"><</button>
+        <button id="right-btn">></button>
+       </div>
+        <div id="sanitized_and_safe_cars">
+            <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/thumbnails/Group+84.png" alt="" id="image1">
+            <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_01-min.jpg" alt="" id="image2">
+            <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_02-min.jpg" alt="" id="image3">
+            <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_03-min.jpg" alt="">
+        </div>
+
+
+        <h1 >Why Revv?</h1>
+        <div id="why-revv">
+            <div>
+                <div>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/home.png" alt="">
+                </div>
+                <div>
+                    <h2>Home Delivery and return</h2>
+                    <p>On-time doorstep service at your preferred location and time</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/price.png" alt="">
+                </div>
+                <div>
+                    <h2>Flexible price plans</h2>
+                    <p>On-time doorstep service at your preferred location and tyime</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/whyRevv/maintained.png" alt="">
+                </div>
+                <div>
+                    <h2>Well maintained cars</h2>
+                    <p>On-time doorstep service at your preferred location and tyime</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>FAQs</h1>
+        <div id="faqs">
+            <div>
+                <h2>Is there a aspeed limit?</h2>
+                <p>Revv allows up to 125 km/hr. However it is 80 km/hr in a few cities where some cars might be equipped with speed governors as per government directives. Revv strictly advises to follow local speed limits.</p>
+            </div>
+            <div>
+                <h2>Can I extend/ cancel/ modify?</h2>
+                <p>Yes, extensions are possible subject to availability & charges. Cancellations & modifications will attract nominal charges as per our policy.</p>
+            </div>
+            <div>
+                <h2>Booking criteria & documents?</h2>
+                <p>Min. 21 years old, have valid original government ID (Aadhar, Passport, or PAN only) and a valid driving licence for “Light Motor Vehicles”, which is min. 1 year old at the time of starting the trip.</p>
+            </div>
+            <div>
+                <h2>Are there any restricted areas?</h2>
+                <p>Leh/Ladhakh, Spiti Valley & Kaza/Nako regions are not permitted to take Revv cars. Customer will be fully liable for any damages incurred to the car in that region.</p>
+            </div>
+        </div>
+
+
+        <h1>Happy Customers</h1>
+        <div id="happy-customers">
+            <div>
+                <h2>Prateek Srivastava</h2>
+                <p>The car delivery was done on time and we were satisfied with the entire booking exprience. We also got instant refund</p>
+            </div>
+            <div>
+                <h2>Prateek Srivastava</h2>
+                <p>The car delivery was done on time and we were satisfied with the entire booking exprience. We also got instant refund</p>
+            </div>
+            <div>
+                <h2>Prateek Srivastava</h1>
+                <p>The car delivery was done on time and we were satisfied with the entire booking exprience. We also got instant refund</p>
+            </div>
+            <div>
+                <h2>Prateek Srivastava</h2>
+                <p>The car delivery was done on time and we were satisfied with the entire booking exprience. We also got instant refund</p>
+            </div>
+        </div>
+
+        <h1>Our journey so far</h1>
+        <div id="journey-so-far">
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/revvers.png" alt="">
+                <h2>1 Mn+</h2>
+                <p>Happy Revvers</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/cities.png" alt="">
+                <h2>22 Cities+</h2>
+                <p>Across India</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/travel.png" alt="">
+                <h2>50 Mn+</h2>
+                <p>Kms travelled</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/review.png" alt="">
+                <h2>4.8 / 5</h2>
+                <p>20k+ reviewers</p>
+            </div>
+        </div>
+
+        <h1>Our Investors</h1>
+        <div id="our-investors">
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp" alt="">
+                <p>Hyundai Motor Company</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp" alt="">
+                <p>Edelweiss Financial Services</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp" alt="">
+                <p>Dream Incubator</p>
+            </div>
+            <div>
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp" alt="">
+                <p>Beenext</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="copyright">
+                <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/logo/revv-logo.png" alt="">
+                <p>© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+            </div>
+            <div id="">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="">FAQs</a></div>
+                <div><a href="">Policies</a></div>
+                <div><a href="">Blogs</a></div>
+            </div>
+            <div id="social">
+                <p>Social</p>
+                <div>
+                    <a href="https://www.facebook.com/revvindia/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt=""></a>
+                    <a href="https://twitter.com/revv_india" target="_blank"><img src="https://cdn-icons.flaticon.com/png/128/665/premium/665228.png?token=exp=1658346718~hmac=4e52e987d0a922c92825d4cf7574ca6f" alt=""></a>
+                    <a href="https://www.instagram.com/revv_india/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" alt=""></a>
+                    <a href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q" target="_blank"><img src="https://cdn-icons.flaticon.com/png/512/3536/premium/3536569.png?token=exp=1658346824~hmac=1c4ef9a700d8458227fe1e29cdb01f0d" alt=""></a>
+                    <a href="https://www.linkedin.com/company/revv-self-drive-car/" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/512/1384/1384028.png" alt=""></a>
+                   
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
+
+<script src="index.js"></script>

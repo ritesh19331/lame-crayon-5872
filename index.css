@@ -193,7 +193,6 @@ form>img+p{
     margin: 0;
     margin-top: -20px;
     padding: 100px 0px 0px 100px;
-    position: relative;
     box-sizing: border-box;
 }
 
@@ -209,7 +208,7 @@ form>img+p{
 #crauser-button{
     position: absolute;
     right: 120px;
-    top: 120px;
+    top: 1000px;
 }
 
 #crauser-button>button{
@@ -232,7 +231,7 @@ form>img+p{
 #crauser-button-sanitized-safe-cars{
     position: absolute;
     right: 120px;
-    top: 490px;
+    top: 1380px;
 }
 
 #crauser-button-sanitized-safe-cars>button{

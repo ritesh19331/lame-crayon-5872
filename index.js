@@ -1,24 +1,23 @@
-let form=document.querySelector("form");
+let formHeading=document.querySelectorAll("#form-heading>div");
 
-let dataCity=JSON.parse(localStorage.getItem("dataCity")) || [];
-form.addEventListener("submit",function(event){
+formHeading[0].addEventListener("click",function(event){
     event.preventDefault();
-    let selectCity=document.querySelector("#select-city").value;
-    let startDateTime=document.querySelector("#start-date").value;
-    let endDateTime=document.querySelector("#end-date").value;
-
-
-
-    console.log(startDateTime,endDateTime)
-    let obj={
-        city: selectCity,
-        startDateTime: startDateTime,
-        endDateTime: endDateTime
-    }
-    localStorage.setItem("dataCity",JSON.stringify(dataCity))
-    dataCity.push(obj);
-    console.log(dataCity)
+    formHeading[1].style.color="white";
+    formHeading[1].style.backgroundColor="unset";
+    formHeading[0].style.backgroundColor="white";
+    formHeading[0].style.color="black";
+    formHeading[0].style.height="auto"
 })
+
+formHeading[1].addEventListener("click",function(event){
+    event.preventDefault();
+    formHeading[0].style.color="white";
+    formHeading[0].style.backgroundColor="unset";
+    formHeading[1].style.backgroundColor="white";
+    formHeading[1].style.color="black";
+    formHeading[1].style.height="auto"
+})
+
 
 let featureImagesLink=["https://revvselfdrivecar.s3.us-west-2.amazonaws.com/offers/Banner-Flat+500+off+blue.png",
 "https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png","https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png","https://revvselfdrivecar.s3.us-west-2.amazonaws.com/15+days.png","https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_01-min.jpg","https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_02-min.jpg","https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_03-min.jpg","https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_04-min.jpg"

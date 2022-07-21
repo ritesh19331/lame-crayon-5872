@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hyundai-subscription-car-list.css">
+</head>
+<body>
+    <div class="navbar">
+        <div id="home-button">
+            <a href="index.html">
+                <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" alt="" >
+                <span>Sanitized & safe</span>
+                <span>    Hyundai Subscription</span>
+            </a>
+        </div>
+
+        <div class="navbar-button">
+            
+            <a class="navbar-button-hover">How it works</a>
+            <a>FAQs</a>
+            <a>Login or Signup</a>
+        </div>
+    </div>
+
+    <div id="Sort">
+        <select name="" id="">
+            <option value="Sort">Sort-By:-</option>
+            <option value="High to Low">High to Low</option>
+            <option value="Low to High">Low to High</option>
+        </select>
+    </div>
+   <div id="below-navbar">
+    
+        <div id="filter-sort">
+            <h2>Filter by</h2>
+            <p>City</p>
+            <select name="" id="location">
+                <option value=""></option>
+                <option value="Chennai">Chennai</option>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+            <p>Search</p>
+            <input type="text" name="" id="search" placeholder="Serach By car Models">
+            <p>Price range</p>
+            <div id="price-range">
+                <input type="text" name="" id="min" placeholder="min">
+                <input type="text" name="" id="max" placeholder="max">
+            </div>
+            
+        </div>
+        <div id="car-list"></div>
+   </div>
+</body>
+</html>
+
+<script src="hyundai-subscription-car-list.js"></script>

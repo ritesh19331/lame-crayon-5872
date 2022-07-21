@@ -1,0 +1,175 @@
+
+.navbar{
+    height: 10vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    display: grid;
+    gap: 30%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#home-button{
+    margin-left: 150px;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+#home-button>a{
+    height: 100%;
+    text-decoration: none;
+}
+#home-button>a>img{
+    height: 80%;
+    padding-top: 7px;
+
+}
+#home-button>a>span:nth-child(3){
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    left: 380px;
+    border-left: 1px solid black;
+    top: 30px;
+    padding-left: 20px;
+}
+#home-button>a>span{
+    margin-left: -60px;
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    letter-spacing: 1px;
+}
+.navbar-button{
+    right: 600px;
+    width: 30%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    right: 100px;
+    
+}
+.navbar-button>a{
+    width: max-content;
+    border: 1px solid gainsboro;
+    margin: auto 12px auto 50px;
+    padding: 10px 30px;
+    font-size: 1.rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+}
+
+.navbar-button>a:hover{
+    color: olivedrab;
+    cursor: pointer;
+}
+.navbar-button>a>span{
+    font-weight: bolder;
+}
+
+#below-navbar{
+    
+    display: grid;
+    grid-template-columns: 25% 70%; 
+    gap: 2%;
+    margin: auto 65px auto 100px;
+    height: 90vh;
+}
+#below-navbar>div{
+    background-color: white;
+     
+}
+#below-navbar>div>div{
+    display: grid;
+    grid-template-columns: 25% 70%;
+    gap: 5%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+
+}
+
+#car-list>div p{
+    font-size: x-large;
+    margin-top: -20px;
+}
+
+#car-info>div>span{
+    margin-right: 70px;
+    color: grey;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#car-info{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+    justify-content: space-between;
+}
+#car-list>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    zoom: 115%;
+}
+
+
+
+#filter-sort>h2{
+    color: gray;
+}
+
+#filter-sort>p{
+    font-size: x-large;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#location{
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+}
+
+#search{
+    width: 97%;
+    margin: auto;
+    display: block;
+    margin-top: -15px;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: larger;
+}
+select+p{
+    margin-top: 50px;
+}
+#price-range{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+}
+#Sort>select{
+    margin-left: 100px;
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#filter>select{
+    width: 200px;
+    height: 50px;
+    font-size: larger;
+}

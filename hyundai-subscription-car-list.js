@@ -1,11 +1,12 @@
 
-let product=[
+let product_list=[
     {
         carName: "Hyundai Santro",
         carimage: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg",
         Transmission: "Manual",
         Fuel: "Diesel",
-        price: 20000  
+        price: 20000  ,
+        city: "Delhi"
     },
 
     {
@@ -13,7 +14,8 @@ let product=[
         carimage: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg",
         Transmission: "Automatic",
         Fuel: "Petrol",
-        price: 21000  
+        price: 21000 ,
+        city:"Mumbai"
     },
 
     {
@@ -21,7 +23,8 @@ let product=[
         carimage: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_grand_i10.jpg",
         Transmission: "Manual",
         Fuel: "Diesel",
-        price: 20000  
+        price: 20000 ,
+        city: "Chennai"
     },
 
     {
@@ -29,7 +32,8 @@ let product=[
         carimage: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_Venue.jpg",
         Transmission: "Manual",
         Fuel: "Diesel",
-        price: 24000  
+        price: 24000 ,
+        city: "Delhi",
     },
 
     {
@@ -37,7 +41,8 @@ let product=[
         carimage: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_creta.jpg",
         Transmission: "Automatic",
         Fuel: "Petrol",
-        price: 42000  
+        price: 42000 ,
+        city: "Bengaluru" 
     },
 
     {
@@ -45,7 +50,8 @@ let product=[
         carimage: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_creta.jpg",
         Transmission: "Manual",
         Fuel: "Petrol",
-        price: 31000  
+        price: 31000 ,
+        city: "Delhi" 
     },
 
     {
@@ -53,13 +59,44 @@ let product=[
         carimage: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_grand_i10.jpg",
         Transmission: "Automatic",
         Fuel: "Petrol",
-        price: 30000  
+        price: 30000  ,
+        city: "Mumbai"
+    },
+
+    {
+        carName: "Hyundai Grand i10",
+        carimage: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_grand_i10.jpg",
+        Transmission: "Automatic",
+        Fuel: "Petrol",
+        price: 32000,
+        city: "Bengaluru"
     }
 ];
 
+let searched_city=localStorage.getItem("city-searched");
+let City=document.querySelector("#location");
+City.value=searched_city;
+
 let car_list=document.querySelector("#car-list");
 localStorage.setItem("car-list",JSON.stringify(car_list)) || [];
-Display(product);
+
+let city_location=document.querySelector("#location").addEventListener("change",function(){
+    let val=document.querySelector("#location").value;
+    document.querySelector("#car-list").innerHTML="";
+    cityFilter(product_list,val)
+})
+
+cityFilter(product_list,City.value);
+
+function cityFilter(product_list,city){
+    let product=[];
+    product=product_list.filter(function(el){
+        return el.city==city;
+    })
+    Display(product);
+}
+
+
 function Display(product){
     car_list=document.querySelector("#car-list");
     product.forEach(function(el,i){
@@ -67,15 +104,10 @@ function Display(product){
         let divblock1=document.createElement("div");
         let divblock2=document.createElement("div");
         car_list.append(divblock);
-        let count=0;
-        divblock.addEventListener("click",function(){
+        divblock.addEventListener("click",function(event){
             event.preventDefault();
-            if(count==0){
-                divblock.style.zoom="150%";
-                count++;
-            }else{
-                divblock.style.zoom="initial"
-            }
+            localStorage.setItem("selected-for-order",JSON.stringify(el));
+            window.location.href="order.html";
         })
         let carimage=document.createElement("img");
         carimage.style.width="100%";

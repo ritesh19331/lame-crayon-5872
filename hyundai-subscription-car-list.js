@@ -29,7 +29,7 @@ let product_list=[
 
     {
         carName: "Hyundai Venue",
-        carimage: "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Hyundai_Venue.jpg",
+        carimage: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/venue/highlights/venue-gallery-1.jpg",
         Transmission: "Manual",
         Fuel: "Diesel",
         price: 24000 ,
@@ -104,6 +104,7 @@ function Display(product){
         let divblock1=document.createElement("div");
         let divblock2=document.createElement("div");
         car_list.append(divblock);
+        let count=0;
         divblock.addEventListener("click",function(event){
             event.preventDefault();
             localStorage.setItem("selected-for-order",JSON.stringify(el));

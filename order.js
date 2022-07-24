@@ -28,6 +28,11 @@ subscription_array.forEach(function(el,i){
             ele.style.backgroundColor="white";
         })
         el.style.backgroundColor="#49a6ba";
+        let SubscriptionTenure=i+1;
+        if(i==3){
+            SubscriptionTenure=i+3;
+        }
+        localStorage.setItem("subscription-tenure",SubscriptionTenure);
     })
 })
 
@@ -69,6 +74,10 @@ let proceed=document.createElement("div");
 proceed.setAttribute("id","proceed");
 document.querySelector("#price-info-and-all").append(proceed);
 proceed.innerText="Proceed";
+proceed.addEventListener("click",function(){
+    event.preventDefault();
+    window.location.href="reserve.html"
+})
 
 let fuel=document.querySelector("#fuel>p");
 fuel.innerText=prod.Fuel;

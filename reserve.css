@@ -1,0 +1,145 @@
+
+.navbar{
+    height: 10vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    display: grid;
+    gap: 30%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+#home-button{
+    margin-left: 150px;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+#home-button>a{
+    height: 100%;
+    text-decoration: none;
+}
+#home-button>a>img{
+    height: 80%;
+    padding-top: 7px;
+
+}
+#home-button>a>span:nth-child(3){
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    left: 380px;
+    border-left: 1px solid black;
+    top: 30px;
+    padding-left: 20px;
+}
+#home-button>a>span{
+    margin-left: -60px;
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    letter-spacing: 1px;
+}
+.navbar-button{
+    right: 600px;
+    width: 30%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    right: 100px;
+    
+}
+.navbar-button>a{
+    width: max-content;
+    border: 1px solid gainsboro;
+    margin: auto 12px auto 50px;
+    padding: 10px 30px;
+    font-size: 1.rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+}
+
+.navbar-button>a:hover{
+    color: olivedrab;
+    cursor: pointer;
+}
+.navbar-button>a>span{
+    font-weight: bolder;
+}
+#below-navbar{
+    display: grid;
+    width: 85%;
+    margin: auto;
+    grid-template-columns: 41.5% 55%;
+    gap: 1.0%; 
+}
+#below-navbar>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 800px;
+}
+#image-info{
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+#price-info{
+    padding: 30px;
+}
+#promocode{
+    color: #49a6ba;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: -15px;
+}
+#inputpromo{
+    width: 50%;
+    font-size: large;
+    height: 50px;
+    display: grid;
+    margin: auto;
+    margin-top: 30px;
+   
+}
+td{
+    height: 50px;
+    font-size: x-large;
+}
+td:nth-child(2){
+    text-align: right;
+    width: 400px;
+}
+
+td:nth-child(1){
+    width: 50%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+td span{
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#total-monthly-fee{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+#Reserve{
+    width: 100%;
+    height: 50px;
+    background-color: #49a6ba;
+    color: white;
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    margin-top: 23px;
+}
